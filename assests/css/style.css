@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Katibeh&family=Lalezar&family=Reem+Kufi+Fun:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #f3f3f3;
+    font-family: 'Lalezar', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    height: 100vh;
+    background: url('https://media.giphy.com/media/upxcnNZD2fhbbr7khg/giphy-downsized-large.gif') center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar {
+    width: 100%;
+    background-color: #00000015;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    padding: 0 15px;   
+    padding-top: 20px;     
+}
+
+#navbar nav {
+    display: flex;
+    width: 100%;            
+    justify-content: center;   
+}
+
+#navbar img{
+    width: 80px;
+}
+
+#navbar ul{
+    justify-content: center; 
+    display: flex;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+#navbar li:hover{
+    background-color: #e4b95b;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #e0d8d8;
+}
+
+#cv h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #e4b95b;
+}
+
+#contact p {
+    color: #dda337;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btn{
+    padding: 15px 30px;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.btn-primary{
+    margin-top: 2%;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.btn-secondary{
+    margin-top: 2rem;
+    margin-top: 2%;
+    color: #ffffff;
+    background-color: #383848;
+    border: 1px solid #ffffff;
+}
+
+.btn-primary:hover , .btn-secondary:hover{
+    background-color: #e4b95b;
+    color: #000000;
+}
+
+header #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+header #st{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+    margin-top: 10%; 
+}
+
+header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+header *{
+    z-index: 10;
+}
+
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://media.giphy.com/media/rcFs59ww1R7yeFszmo/giphy.gif') center center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
+}
+
+.misty {
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.box-st{
+    border: #ff0000 2px solid;
+    border-radius: 20px;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#st h1{
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    color: #e0d8d8;
+}
+
+#about .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about .title h2{
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    color: #0f0f0f;
+}
+
+#about .title p{
+    color: #9a9a9a;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    margin-top: 25px;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-content img{
+    width: 450px;
+}
+
+#about .about-content p{
+    margin-left: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-me p {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #333;
+    margin-left: 20px; 
+}
+@media screen and (max-width: 768px) {
+    .about-me p {
+        font-size: 16px; 
+    }
+}
+.fa-laptop { color: #27ae60; }
+        .fa-code { color: #e74c3c; }
+        .fa-database { color: #3498db; }
+        .fa-server { color: #f39c12; }
+        .fa-paint-brush { color: #9b59b6; }
+        .contact-info {
+            float: right;
+            width: 50%;
+            text-align: right;
+            padding: 10px;
+        }
+
+        .info-box {
+            background-color: rgba(136, 136, 136, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .info-box span {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .clickable-text {
+            color: #e4b95b;
+            text-decoration: underline;
+        }
+
+        .info-box i {
+            color: #ffffffad;
+            font-size: 10px;
+            cursor: pointer;
+            margin: 1.5px;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+        .modal h2 {
+            text-align: center;
+        }
+        .modal label {
+            display: block;
+            margin-top: 10px;
+        }
+        .modal input, .modal textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .modal button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }

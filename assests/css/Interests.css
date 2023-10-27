@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Katibeh&family=Lalezar&family=Reem+Kufi+Fun:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{ 
+    background-color: #050404c2;
+    font-family: 'Lalezar', cursive;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+#navbar {
+    width: 100%;
+    background-color: #242323a2;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;     
+    padding: 15px;   
+    padding-top: 20px;     
+}
+
+#navbar nav {
+    display: flex;
+    width: 100%;            
+    justify-content: center;   
+}
+
+
+#navbar ul{
+    justify-content: center; 
+    display: flex;
+}
+
+#navbar ul li a{
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+#navbar li:hover{
+    background-color: #e4b95b;
+}
+
+#contact h1{
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    margin-top: 100px;
+    color: #e0d8d8;
+}
+
+#cv h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #e4b95b;
+}
+
+#contact p {
+    color: #dda337;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.btn{
+    padding: 15px 30px;
+    border: none;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+.btn-primary{
+    margin-top: 2%;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.btn-secondary{
+    margin-top: 2rem;
+    margin-top: 2%;
+    color: #ffffff;
+    background-color: #383848;
+    border: 1px solid #ffffff;
+}
+
+.btn-primary:hover , .btn-secondary:hover{
+    background-color: #e4b95b;
+    color: #000000;
+}
+
+
+
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://media.giphy.com/media/rcFs59ww1R7yeFszmo/giphy.gif') center center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+#about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
+}
+
+.misty {
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+.box-st{
+    border: #ff0000 2px solid;
+    border-radius: 20px;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#st h1{
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    color: #e0d8d8;
+}
+
+#about .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about .title h2{
+    font-family: 'Cairo', sans-serif;
+    font-size: 50px;
+    color: #0f0f0f;
+}
+
+#about .title p{
+    color: #9a9a9a;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Reem Kufi Fun', sans-serif;
+    margin-top: 25px;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-content img{
+    width: 450px;
+}
+
+#about .about-content p{
+    margin-left: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-me img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about-me p {
+    text-align: right;
+    font-size: 18px;
+    font-family: 'Cairo', sans-serif;
+    color: #333;
+    margin-left: 20px; 
+}
+@media screen and (max-width: 768px) {
+    .about-me p {
+        font-size: 16px; 
+    }
+}
+h1 {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+#contact {
+    background-color: #636262;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.interests-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.interests-list li {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.interests-list i {
+    margin-right: 10px;
+    padding-left: 15px;
+    font-size: 24px;
+}
+
+.interests-list .fa-laptop { color: #27ae60; }
+.interests-list .fa-code { color: #e74c3c; }
+.interests-list .fa-database { color: #3498db; }
+.interests-list .fa-server { color: #f39c12; }
+.interests-list .fa-paint-brush { color: #9b59b6; }
